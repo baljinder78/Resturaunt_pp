@@ -14,23 +14,27 @@ public class Menu {
 //
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String iteamName;
     private Double price;
 
-    @OneToOne
+    @ManyToOne
     private Restraunt restraunt;
 
+
+    public Menu() {
+    }
 
     public Menu(long id) {
         this.id = id;
     }
 
-    public Menu(long id, String iteamName, Double price) {
+    public Menu(long id, String iteamName, Double price,Long res_id) {
         this.id = id;
         this.iteamName = iteamName;
         this.price = price;
+        this.restraunt=new Restraunt(res_id);
     }
 
     public long getId() {
@@ -57,5 +61,11 @@ public class Menu {
         this.price = price;
     }
 
+    public Long getRestraunt() {
+        return restraunt.getId();
+    }
 
+    public void setRestraunt(Long restraunt) {
+        this.restraunt = new Restraunt(restraunt);
+    }
 }

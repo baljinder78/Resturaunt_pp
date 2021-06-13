@@ -26,6 +26,9 @@ public class User {
     private String email;
     @Column(unique = true)
     private Long mobile;
+
+    private String role;
+
     public User() {
     }
 
@@ -86,6 +89,7 @@ public class User {
     public void setMobile(Long mobile) {
         this.mobile = mobile;
     }
+
 
     @Override
     public String toString() {

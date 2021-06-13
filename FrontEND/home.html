@@ -12,8 +12,8 @@ body {font-family: "Times New Roman", Georgia, Serif;}
     font-family: "Raleway", sans-serif;
   letter-spacing: 3px;
 }
-</style>
-<body>
+</style >
+<body onload="getallrest()">
 
 <!-- Navbar (sit on top) -->
 <div class="hh-top">
@@ -111,79 +111,79 @@ body {font-family: "Times New Roman", Georgia, Serif;}
   <hr> -->
 
 
-  <!-- Demo Section -->
-  <div class="hh-container hh-padding-32" id="demo">
-    <h1>Demo!</h1><br>
-    <!-- <h3 class="hh-border-bottom hh-border-light-grey hh-padding-16">Projects</h3> -->
+  <div class="hh-container hh-padding-32" id="allrest">
+    <h1>All Restraunt</h1><br>
+
   </div>
 
-  <div class="hh-row-padding">
-  <div class="hh-col l3">
-    <div class="hh-container">
-      <div class="hh-display-container">
-        <img src="./images/burger.jfif" style="width:100%">
-        <span class="hh-tag hh-display-topleft"></span>
-        <div class="hh-display-middle hh-display-hover">
-          <a href="./html/login.html"><button class="hh-button hh-black">Login</button></a>
-        </div>
-      </div>
-      <p><b>Restaurant-1</b></p>
-    </div>
-    <div class="hh-container">
-      <div class="hh-display-container">
-        <img src="./images/sandwich.jpg" style="width:100%">
-        <span class="hh-tag hh-display-topleft">New</span>
-        <div class="hh-display-middle hh-display-hover">
-          <a href="./html/login.html"><button class="hh-button hh-black">Login</button></a>
-        </div>
-      </div>
-      <p><b>Restaurant-2</b></p>
-    </div>
-  </div>
-  <div class="hh-col l3">
-    <div class="hh-container">
-      <div class="hh-display-container">
-        <img src="./images/cholebhature.jpg" style="width:100%">
-        <span class="hh-tag hh-display-topleft">New</span>
-        <div class="hh-display-middle hh-display-hover">
-          <a href="./html/login.html"><button class="hh-button hh-black">Login</button></a>
-        </div>
-      </div>
-      <p><b>Restaurant-3</b></p>
-    </div>
-    <div class="hh-container">
-      <div class="hh-display-container">
-        <img src="./images/pavbhaji.jpg" style="width:100%">
-        <span class="hh-tag hh-display-topleft"></span>
-        <div class="hh-display-middle hh-display-hover">
-          <a href="./html/login.html"><button class="hh-button hh-black">Login</button></a>
-        </div>
-      </div>
-      <p><b>Restaurant-4</b></p>
-    </div>
-  </div>
-  <div class="hh-col l3">
-    <div class="hh-container">
-      <div class="hh-display-container">
-        <img src="./images/dessert.jpg" style="width:100%">
-        <span class="hh-tag hh-display-topleft"></span>
-        <div class="hh-display-middle hh-display-hover">
-          <a href="./html/login.html"><button class="hh-button hh-black">Login</button></a>
-        </div>
-      </div>
-      <p><b>Restaurant-5</b></p>
-    </div>
-    <div class="hh-container">
-      <div class="hh-display-container">
-        <img src="./images/juice.jpg" style="width:100%">
-        <span class="hh-tag hh-display-topleft">New</span>
-        <div class="hh-display-middle hh-display-hover">
-          <a href="./html/login.html"><button class="hh-button hh-black">Login</button></a>
-        </div>
-      </div>
-      <p><b>Restaurant-6</b></p>
-    </div>
-  </div></div>
+<!--  <div class="hh-row-padding">-->
+<!--    <div class="hh-display-middle hh-display-hover">-->
+<!--      <a href="./html/login.html"><button class="hh-button hh-black">Login</button></a>-->
+<!--    </div>-->
+<!--  <div class="hh-col l3">-->
+<!--    <div class="hh-container">-->
+<!--      <div class="hh-display-container">-->
+<!--        <img src="./images/burger.jfif" style="width:100%">-->
+<!--        <span class="hh-tag hh-display-topleft"></span>-->
+
+<!--      </div>-->
+<!--      <p><b>Restaurant-1</b></p>-->
+<!--    </div>-->
+<!--    <div class="hh-container">-->
+<!--      <div class="hh-display-container">-->
+<!--        <img src="./images/sandwich.jpg" style="width:100%">-->
+<!--        <span class="hh-tag hh-display-topleft">New</span>-->
+<!--        <div class="hh-display-middle hh-display-hover">-->
+<!--          <a href="./html/login.html"><button class="hh-button hh-black">Login</button></a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <p><b>Restaurant-2</b></p>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="hh-col l3">-->
+<!--    <div class="hh-container">-->
+<!--      <div class="hh-display-container">-->
+<!--        <img src="./images/cholebhature.jpg" style="width:100%">-->
+<!--        <span class="hh-tag hh-display-topleft">New</span>-->
+<!--        <div class="hh-display-middle hh-display-hover">-->
+<!--          <a href="./html/login.html"><button class="hh-button hh-black">Login</button></a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <p><b>Restaurant-3</b></p>-->
+<!--    </div>-->
+<!--    <div class="hh-container">-->
+<!--      <div class="hh-display-container">-->
+<!--        <img src="./images/pavbhaji.jpg" style="width:100%">-->
+<!--        <span class="hh-tag hh-display-topleft"></span>-->
+<!--        <div class="hh-display-middle hh-display-hover">-->
+<!--          <a href="./html/login.html"><button class="hh-button hh-black">Login</button></a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <p><b>Restaurant-4</b></p>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="hh-col l3">-->
+<!--    <div class="hh-container">-->
+<!--      <div class="hh-display-container">-->
+<!--        <img src="./images/dessert.jpg" style="width:100%">-->
+<!--        <span class="hh-tag hh-display-topleft"></span>-->
+<!--        <div class="hh-display-middle hh-display-hover">-->
+<!--          <a href="./html/login.html"><button class="hh-button hh-black">Login</button></a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <p><b>Restaurant-5</b></p>-->
+<!--    </div>-->
+<!--    <div class="hh-container">-->
+<!--      <div class="hh-display-container">-->
+<!--        <img src="./images/juice.jpg" style="width:100%">-->
+<!--        <span class="hh-tag hh-display-topleft">New</span>-->
+<!--        <div class="hh-display-middle hh-display-hover">-->
+<!--          <a href="./html/login.html"><button class="hh-button hh-black">Login</button></a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <p><b>Restaurant-6</b></p>-->
+<!--    </div>-->
+<!--  </div></div>-->
 
   <hr>
 
